@@ -12,4 +12,4 @@
 */
 
 //Route::get('/post/{id}', 'PostsController@index');
-Route::get('/posts','PostsController@index');
+Route::get('/posts/{id}','PostsController@index');
