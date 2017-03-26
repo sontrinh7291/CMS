@@ -25,7 +25,7 @@ class PostsController extends Controller
     public function create()
     {
         //
-
+        return "create is here";
     }
 
     /**
@@ -45,9 +45,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
         //
+        return "this is show" . $id;
 
     }
 
@@ -86,4 +87,11 @@ class PostsController extends Controller
     {
         //
     }
+
+    public function contact(){
+      $people = ['Tom','Jerry'];
+      $person =[];
+      return view('contact', compact('people','person'));
+    }
+
 }

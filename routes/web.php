@@ -12,4 +12,6 @@
 */
 
 //Route::get('/post/{id}', 'PostsController@index');
-Route::get('/posts/{id}','PostsController@index');
+Route::resource('posts','PostsController');
+
+Route::get('/contact', 'PostsController@contact');
